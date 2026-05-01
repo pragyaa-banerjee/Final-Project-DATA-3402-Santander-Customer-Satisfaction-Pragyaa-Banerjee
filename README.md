@@ -30,7 +30,7 @@ of 0.79 on the test set, which is a solid non-trivial result for a Logistic Regr
 ### Data Visualization
 Histograms of selected features were compared between satisfied and unsatisfied customers. 
 `var15` showed the clearest difference between classes. 
-<img width="826" height="231" alt="image" src="https://github.com/user-attachments/assets/3d16c804-a5d7-4cfc-9665-43c9dcb42fd4" />
+<img width="1004" height="392" alt="image" src="https://github.com/user-attachments/assets/f3746004-51ad-40c3-88d0-eba9560bd61a" />
 Most other features were heavily skewed toward zero making visual separation difficult.
 
 ## Problem Formulation
