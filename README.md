@@ -2,9 +2,8 @@
 
 # Final Project DATA 3402 - Santander Bank Customer Satisfaction
 
-## One Sentence Summary
 This project aims to perform a binary classification using Logistic Regression on Santander Customer Satisfaction dataset. We want to predict customer
-satisfaction using data from the [Santander Customer Satisfaction](https://www.kaggle.com/competitions/santander-customer-satisfaction/overview) Kaggle challenge.
+satisfaction for the bank using data from the [Santander Customer Satisfaction](https://www.kaggle.com/competitions/santander-customer-satisfaction/overview) Kaggle challenge.
 
 ## Overview
 The task, as defined by the Kaggle challenge, is to predict whether a customer is 
