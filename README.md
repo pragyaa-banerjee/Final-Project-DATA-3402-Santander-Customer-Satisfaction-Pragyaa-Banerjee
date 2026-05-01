@@ -53,9 +53,16 @@ Most other features were heavily skewed toward zero making visual separation dif
 
 ## Conclusions
 - Logistic Regression achieved an AUC-ROC of 0.79 which is a non-trivial result
-- The dataset is heavily imbalanced (24.3:1) which makes accuracy a misleading metric
-- `var15` appeared to be the most informative feature visually
-- Using `class_weight='balanced'` significantly improved recall for unsatisfied customers
+- The dataset is heavily imbalanced (24.3:1) which makes accuracy a misleading metric — 
+in a real banking context, missing an unsatisfied customer is more costly than 
+falsely flagging a satisfied one, so recall matters more than accuracy
+- `var15` (likely representing customer age) appeared to be the most informative 
+feature, suggesting that age may play a role in customer satisfaction at Santander Bank
+- Using `class_weight='balanced'` significantly improved recall for unsatisfied 
+customers, catching 72% of them — in a real world scenario this means the bank 
+could proactively reach out to 72% of at-risk customers before they leave
+- Early identification of unhappy customers allows banks to take proactive steps 
+such as personalized offers or improved service, potentially reducing customer churn
 
 ## Future Work
 - Try more powerful models like Random Forest or XGBoost
