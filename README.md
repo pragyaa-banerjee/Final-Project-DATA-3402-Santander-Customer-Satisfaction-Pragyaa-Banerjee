@@ -12,7 +12,7 @@ formulates the problem as a binary classification task, using Logistic Regressio
 model with 143 cleaned and scaled features as input. Our model achieved an AUC-ROC score 
 of 0.79 on the test set, which is a solid non-trivial result for a Logistic Regression baseline.
 
-## Summary of Workdone
+## Summary of Work Done
 
 ### Data
 - **Type:** CSV file of anonymized numerical features, output: binary satisfaction flag (TARGET column)
