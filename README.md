@@ -32,6 +32,8 @@ Histograms of selected features were compared between satisfied and unsatisfied 
 `var15` showed the clearest difference between classes. 
 <img width="1004" height="392" alt="image" src="https://github.com/user-attachments/assets/f3746004-51ad-40c3-88d0-eba9560bd61a" />
 Most other features were heavily skewed toward zero making visual separation difficult.
+A correlation heatmap of the first 20 features revealed strong positive correlations among `imp_op_var39` and `imp_op_var41` 
+related features, and strong negative correlations among `ind_var5_0` and `ind_var5`. 
 
 ## Problem Formulation
 - **Input:** 143 anonymized numerical features
