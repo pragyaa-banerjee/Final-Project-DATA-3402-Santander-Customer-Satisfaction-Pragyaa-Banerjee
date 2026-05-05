@@ -16,7 +16,8 @@ of 0.79 on the test set, which is a solid non-trivial result for a Logistic Regr
 
 ### Data
 - **Type:** CSV file of anonymized numerical features, output: binary satisfaction flag (TARGET column)
-- **Size:** 76,020 rows and 371 columns in the training set
+- **Size before cleaning:** 76,020 rows and 371 columns
+- **Size after cleaning:** 71,179 rows and 143 columns
 - **Split:** 56,943 training samples, 14,236 test samples, no validation set
 
 ### Preprocessing / Clean up
