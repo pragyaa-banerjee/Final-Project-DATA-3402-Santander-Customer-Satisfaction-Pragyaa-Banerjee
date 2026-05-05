@@ -19,6 +19,9 @@ of 0.79 on the test set, which is a solid non-trivial result for a Logistic Regr
 - **Size before cleaning:** 76,020 rows and 371 columns
 - **Size after cleaning:** 71,179 rows and 143 columns
 - **Split:** 56,943 training samples, 14,236 test samples, no validation set
+- **Class Imbalance:** The dataset is heavily imbalanced — 73,012 satisfied customers (0) 
+vs 3,008 unsatisfied customers (1), a ratio of 24.3:1. This was addressed during 
+training using `class_weight='balanced'` in Logistic Regression.
 
 ### Preprocessing / Clean up
 - Dropped the `ID` column (row identifier, not a feature)
