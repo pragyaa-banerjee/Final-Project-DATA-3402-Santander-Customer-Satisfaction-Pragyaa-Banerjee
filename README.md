@@ -58,6 +58,10 @@ related features, and strong negative correlations among `ind_var5_0` and `ind_v
 | AUC-ROC | 0.7900 |
 | Recall (Unsatisfied) | 0.72 |
 
+<img width="824" height="606" alt="image" src="https://github.com/user-attachments/assets/74084bbe-b18b-4074-8378-f4a935e1d173" />
+The ROC curve shows our model (AUC = 0.79) performs significantly better than 
+random guessing (AUC = 0.50), indicated by the blue curve staying well above the dashed line.
+
 ## Conclusions
 - Logistic Regression achieved an AUC-ROC of 0.79 which is a non-trivial result
 - The dataset is heavily imbalanced (24.3:1) which makes accuracy a misleading metric — 
