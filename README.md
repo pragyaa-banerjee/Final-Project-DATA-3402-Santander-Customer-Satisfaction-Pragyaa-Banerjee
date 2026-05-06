@@ -41,11 +41,11 @@ We then manually selected 7 representative features that appeared more readable 
 
 We selected `var15` and `num_var4` showed the 
 clearest visual separation between satisfied and unsatisfied customers. The remaining features are visualized in the notebook.
-
+<img width="1228" height="479" alt="image" src="https://github.com/user-attachments/assets/5f96836d-800f-4a5d-ae82-2dd49093d775" />
 **var15** : Likely represents customer age. Satisfied customers peak sharply around 
 23-25 while unsatisfied customers are more spread out toward older ages, making 
 this the most promising feature for classification.
-
+<img width="1203" height="468" alt="image" src="https://github.com/user-attachments/assets/d1d830d9-9f63-43a5-a58c-6435033ca3bd" />
 **num_var4** : A discrete count variable. Unsatisfied customers are heavily 
 concentrated at 0 while satisfied customers peak at 1 and spread across higher 
 values, suggesting customers with more banking activity tend to be more satisfied.
@@ -53,11 +53,14 @@ values, suggesting customers with more banking activity tend to be more satisfie
 The plots below show var15 and num_var4 before and after scaling. The shape of the 
 distribution stays the same, only the x-axis range changes.
 
+<img width="1205" height="679" alt="image" src="https://github.com/user-attachments/assets/744bffac-598c-49c8-8519-4c1d97bd4cd7" />
+
 The correlation heatmap of the first 10 features shows that `imp_op_var39` and 
 `imp_op_var40` related features are strongly correlated, likely measured at different 
 time points. Since Logistic Regression is not significantly affected by multicollinearity, 
 no additional features of the remaining 143 were removed.
 
+<img width="993" height="812" alt="image" src="https://github.com/user-attachments/assets/76136840-2a82-47e9-80f7-d103781f9947" />
 
 ## Problem Formulation
 - **Input:** 143 anonymized numerical features
