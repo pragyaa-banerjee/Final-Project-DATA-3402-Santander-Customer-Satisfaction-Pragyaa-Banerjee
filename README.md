@@ -111,7 +111,7 @@ such as personalized offers or improved service, potentially reducing customer c
 5. Run all cells in the notebook in order
 
 ## Overview of Files in Repository
-- `Notebook for Final Project DATA 3402 Pragyaa Banerjee.ipynb` — Main Jupyter notebook containing all code and analysis
+- `Updated for Final Project DATA 3402 Pragyaa Banerjee.ipynb` — Main Jupyter notebook containing all code and analysis
 - `submission.csv` — Generated predictions for the Kaggle test set
 - `README.md` — This file
 
