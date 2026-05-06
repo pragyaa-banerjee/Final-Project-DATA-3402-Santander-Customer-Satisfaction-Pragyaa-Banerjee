@@ -35,9 +35,12 @@ weight to the minority class (unsatisfied customers)
 ### Data Visualization
 
 We compared feature distributions between satisfied (0) and unsatisfied (1) customers 
-using density-normalized histograms to account for the 24.3:1 class imbalance. Due to 
-the large number of features (143), we manually selected 7 representative features for 
-visualization. Note that most other features were heavily skewed toward zero making visual separation difficult.
+using density-normalized histograms to account for the 24.3:1 class imbalance. 
+We first attempted to select features using the largest mean difference between classes, but most features in the dataset were heavily skewed toward zero making visual separation difficult. 
+We then manually selected 7 representative features that appeared more readable and interpretable for visualization purposes.
+
+We selected `var15` and `num_var4` showed the 
+clearest visual separation between satisfied and unsatisfied customers. The remaining features are visualized in the notebook.
 
 **var15** : Likely represents customer age. Satisfied customers peak sharply around 
 23-25 while unsatisfied customers are more spread out toward older ages, making 
