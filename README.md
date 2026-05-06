@@ -33,12 +33,30 @@ weight to the minority class (unsatisfied customers)
 - Applied StandardScaler to all features
 
 ### Data Visualization
-Histograms of selected features were compared between satisfied and unsatisfied customers. 
-`var15` showed the clearest difference between classes. 
-<img width="1004" height="392" alt="image" src="https://github.com/user-attachments/assets/f3746004-51ad-40c3-88d0-eba9560bd61a" />
-Most other features were heavily skewed toward zero making visual separation difficult.
-A correlation heatmap of the first 20 features revealed strong positive correlations among `imp_op_var39` and `imp_op_var41` 
-related features, and strong negative correlations among `ind_var5_0` and `ind_var5`. 
+
+We compared feature distributions between satisfied (0) and unsatisfied (1) customers 
+using density-normalized histograms to account for the 24.3:1 class imbalance. Due to 
+the large number of features (143), we manually selected 7 representative features for 
+visualization. Note that features with more than 99% zeros (like the `delta_*` features) 
+were impossible to visualize meaningfully and were dropped during cleaning. Most other features were heavily skewed toward zero making visual separation difficult.
+
+**var15** — Likely represents customer age. Satisfied customers peak sharply around 
+23-25 while unsatisfied customers are more spread out toward older ages, making 
+this the most promising feature for classification.
+
+
+**num_var4** — A discrete count variable. Unsatisfied customers are heavily 
+concentrated at 0 while satisfied customers peak at 1 and spread across higher 
+values, suggesting customers with more banking activity tend to be more satisfied.
+
+The plots below show var15 and num_var4 before and after scaling. The shape of the 
+distribution stays the same — only the x-axis range changes.
+
+The correlation heatmap of the first 10 features shows that `imp_op_var39` and 
+`imp_op_var40` related features are strongly correlated, likely measured at different 
+time points. Since Logistic Regression is not significantly affected by multicollinearity, 
+no additional features of the remaining 143 were removed.
+
 
 ## Problem Formulation
 - **Input:** 143 anonymized numerical features
