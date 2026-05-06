@@ -37,20 +37,18 @@ weight to the minority class (unsatisfied customers)
 We compared feature distributions between satisfied (0) and unsatisfied (1) customers 
 using density-normalized histograms to account for the 24.3:1 class imbalance. Due to 
 the large number of features (143), we manually selected 7 representative features for 
-visualization. Note that features with more than 99% zeros (like the `delta_*` features) 
-were impossible to visualize meaningfully and were dropped during cleaning. Most other features were heavily skewed toward zero making visual separation difficult.
+visualization. Note that most other features were heavily skewed toward zero making visual separation difficult.
 
-**var15** — Likely represents customer age. Satisfied customers peak sharply around 
+**var15** : Likely represents customer age. Satisfied customers peak sharply around 
 23-25 while unsatisfied customers are more spread out toward older ages, making 
 this the most promising feature for classification.
 
-
-**num_var4** — A discrete count variable. Unsatisfied customers are heavily 
+**num_var4** : A discrete count variable. Unsatisfied customers are heavily 
 concentrated at 0 while satisfied customers peak at 1 and spread across higher 
 values, suggesting customers with more banking activity tend to be more satisfied.
 
 The plots below show var15 and num_var4 before and after scaling. The shape of the 
-distribution stays the same — only the x-axis range changes.
+distribution stays the same, only the x-axis range changes.
 
 The correlation heatmap of the first 10 features shows that `imp_op_var39` and 
 `imp_op_var40` related features are strongly correlated, likely measured at different 
